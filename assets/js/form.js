@@ -69,5 +69,5 @@ function isEmail (email) {
 }
 
 function isPassword (password) {
-    return /^(?=.*\d)(?=.[A-Z])[0-9a-zA-Z]{7,}$/.test(password);
+    return /^(?=.*\d)(?=.*[A-Z])[0-9a-zA-Z]{7,}$/.test(password);
 }
