@@ -1,4 +1,4 @@
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Volgograd&appid=583856ea872b338f6dbf750beba1e52d&units=metric&lang=ru';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Volgograd&appid=583856ea872b338f6dbf750beba1e52d&units=metric&lang=ru';
 const url2 = 'https://api.openweathermap.org/data/2.5/onecall?lat=48.7194&lon=44.5018&exclude=current,minutely,daily,alerts&appid=583856ea872b338f6dbf750beba1e52d&units=metric';
 const tempUnit = '˚';
 const humidUnit = '%';
