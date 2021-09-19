@@ -234,11 +234,11 @@ img {
     }
 
     .clock__container.grid {
-        height: 550px;
+        height: 500px;
     }
 
     .tictactoe__container.grid {
-        height: 470px;
+        height: 490px;
     }
 
     .project.tictactoe__container.grid {
@@ -341,14 +341,22 @@ img {
         }
 
         .project.form__container.grid {
-            height: 900px;
+            height: 850px;
             padding: 0;
+        }
+
+        .form__container.grid {
+            height: 600px;
         }
     
         .project.calculator__container.grid {
             height: 700px;
             padding: 0;
-        }  
+        }
+
+        .calculator__container.grid {
+            height: 550px;
+        }
     
         .project.weather__container.grid {
             height: 900px;
