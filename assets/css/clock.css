@@ -11,8 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
-    -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1);
+    box-shadow: 3px 3px 8px hsla(var(--hue-color), 8%, 12%, 1),
+    -3px -3px 8px hsla(var(--hue-color), 8%, 20%, 1),
+    inset 2px 2px 3px hsla(var(--hue-color), 8%, 20%, 1),
+    inset -2px -2px 3px hsla(var(--hue-color), 8%, 12%, 1);
 }
 
 .clock__content {
