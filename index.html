@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/clock.css">
+    <link rel="stylesheet" href="assets/css/tictactoe.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/calculator.css">
+    <link rel="stylesheet" href="assets/css/weather.css">
+
+    <title>JS Portfolio</title>
+</head>
+<body>
+
+    <!-- VIZITKA -->
+
+        <section>
+        <div id="bg-text">
+            <h1 id="bg-text1">Java</h1>
+            <h1 id="bg-text2">Script</h1>
+        </div>
+
+        <div class="hero__container grid">            
+            <div class="herotext">
+                <h2>Меня зовут Роман и я – начинающий <span style="color: #5E5EE4;">веб-разработчик</span></h2>
+                <p>Если вы видите эту страницу, значит, 
+                я скорее всего отправил ссылку на нее
+                в ответ на вакансию <span style="color: #5E5EE4;">Junior front-end developer</span>.</p>
+                <p>Ниже представлены мои небольшие проекты,
+                    выполненные на языке <span style="color: #5E5EE4;">JavaScript</span>.</p>
+            </div>
+            
+            <div class="hero-img">
+                <img src="./assets/photo.png" alt="">
+            </div>
+        </div>
+        </section>
+
+    <!-- CHASIKI -->
+
+        <section>
+        <div class="project clock__container grid">
+            <div class="descriptor grid">
+                <div class="numeration"><h1>1</h1></div>
+                <div class="description">
+                    <div class="description__name">Часы</div>
+                    <div class="description__text">Простая модель часов со стрелочной индикацией, которые также отображают дату</div>
+                </div>
+            </div>            
+                <div class="clock__container grid">
+                    <div class="clock__content grid">
+                        <div class="clock__circle">
+
+                            <span class="clock__twelve"></span>
+                            <span class="clock__three"></span>
+                            <span class="clock__six"></span>
+                            <span class="clock__nine"></span>
+
+                            <div class="clock__rounder"></div>
+                            <div class="clock__hour" id="clock-hour"></div>
+                            <div class="clock__minutes" id="clock-minutes"></div>
+                            <div class="clock__seconds" id="clock-seconds"></div>
+
+                        </div>
+
+                        <div>
+                            <div class="clock__text">
+                                <div class="clock__text-hour" id="text-hour"></div>
+                                <div class="clock__text-minutes" id="text-minutes"></div>
+                            </div>
+
+                            <div class="clock__date">
+                                <span id="date-day"></span>
+                                <span id="date-month"></span>
+                                <span id="date-year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+    <!-- KRESTIKI-NOLIKI -->
+
+        <section>
+        <div class="project tictactoe__container grid">
+            <div class="descriptor grid">
+                <div class="numeration"><h1>2</h1></div>
+                <div class="description">
+                    <div class="description__name">Крестики-нолики</div>
+                    <div class="description__text">Классическая игра для двух противников. Здесь второй противник – компьютер</div>
+                </div>
+            </div>
+            <div class="tictactoe__container grid">
+                <div class="board grid">
+                        <div class="cell" id="cell0"></div>
+                        <div class="cell" id="cell1"></div>
+                        <div class="cell" id="cell2"></div>
+                        <div class="cell" id="cell3"></div>
+                        <div class="cell" id="cell4"></div>
+                        <div class="cell" id="cell5"></div>
+                        <div class="cell" id="cell6"></div>
+                        <div class="cell" id="cell7"></div>
+                        <div class="cell" id="cell8"></div>
+                </div>
+                <div class="resultbox hide">
+                    <p id="win-message"></p>
+                    <button id="restart-button">Еще раз?</button>
+                </div>
+                <!-- <div class="hide" id="win-message"></div> -->
+            </div>
+        </div>
+        </section>
+
+    <!-- VALIDACIA FORMY -->
+
+        <section>
+            <div class="project form__container grid">
+                <div class="descriptor grid">
+                    <div class="numeration"><h1>3</h1></div>
+                    <div class="description">
+                        <div class="description__name">Проверка формы</div>
+                        <div class="description__text">Стандартная форма для регистрации. Проверяет факт ввода и тип введенных данных. <br> Требования к паролю – от 7 знаков, минимум 1 цифра и 1 строчная буква</div>
+                    </div>
+                </div>
+                <div class="form__container grid">
+                    <form class="form" id="form">
+                        <div class="form__header">Введите данные, <br> используя латиницу</div>
+
+                        <div class="form__control">
+                            <label>Логин</label>
+                            <input type="text" placeholder="Введите логин" id="login">
+                            <span class="check">✔</span>
+                            <span class="problem">!</span>
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form__control">
+                            <label>Почта</label>
+                            <input type="email" placeholder="Введите почту" id="email">
+                            <span class="check">✔</span>
+                            <span class="problem">!</span>
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form__control">
+                            <label>Пароль</label>
+                            <input type="password" placeholder="Введите пароль" id="password">
+                            <span class="check">✔</span>
+                            <span class="problem">!</span>
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="form__control">
+                            <label>Подтвердите пароль</label>
+                            <input type="password" placeholder="Введите пароль еще раз" id="password2">
+                            <span class="check">✔</span>
+                            <span class="problem">!</span>
+                            <small>Error message</small>
+                        </div>
+
+                        <button>Создать аккаунт</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<!-- CALCULATOR -->
+
+    <section>
+            <div class="project calculator__container grid">
+                <div class="descriptor grid">
+                    <div class="numeration"><h1>4</h1></div>
+                    <div class="description">
+                        <div class="description__name">Калькулятор</div>
+                        <div class="description__text">Простой калькулятор, поддерживающий основные операции</div>
+                    </div>
+                </div>
+                <div class="calculator__container grid">
+                    <div class="calcwrapper grid">
+                        <div id="display">
+                            <div id="prev-number"></div>
+                            <div id="current-number">0</div>
+                        </div>
+                        <div class="keyboard grid">
+                            <button class="operator" id="clearbutton">C</button>
+                            <button class="operator" id="posnegbutton">+/-</button>
+                            <button class="operator" id="percentbutton">%</button>
+                            <button class="operator" data-operator>÷</button>
+                            <button data-number>7</button>
+                            <button data-number>8</button>
+                            <button data-number>9</button>
+                            <button class="operator" data-operator>×</button>
+                            <button data-number>4</button>
+                            <button data-number>5</button>
+                            <button data-number>6</button>
+                            <button class="operator" data-operator>–</button>
+                            <button data-number>1</button>
+                            <button data-number>2</button>
+                            <button data-number>3</button>
+                            <button class="operator" data-operator>+</button>
+                            <button data-number>0</button>
+                            <button data-number>.</button>
+                            <button id="erasebutton">⌫</button>
+                            <button class="operator" id="equals">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- POGODA -->
+
+    <section>
+        <div class="project weather__container grid">
+            <div class="descriptor grid">
+                <div class="numeration"><h1>5</h1></div>
+                <div class="description">
+                    <div class="description__name">Погода в Волгограде</div>
+                    <div class="description__text">Состояние погоды в Волгограде, включая температуру, скорость ветра и влажность, а также прогноз погоды на ближайшие 5 часов. <br>Приложение использует API сервиса OpenWeather</div>
+                </div>
+            </div>
+            <div class="weather__container grid">
+                <div class="weatherwrapper">
+
+                    <div class="current">
+                        <div class="current__date">19 сентября</div>
+                        <div class="current__city">Волгоград</div>
+                        <div class="current__description">Переменная облачность</div>
+                        <div class="current__temperature">21˚</div>
+                        <div class="current__icon"></div>
+                      </div>
+                
+                      <div class="details">
+                        <div class="details__item wind">
+                          <div class="details__name">Скорость ветра</div>
+                          <div class="details__value">7 м/с</div>
+                        </div>
+                        <div class="details__item humidity">
+                            <div class="details__name">Влажность</div>
+                            <div class="details__value">47%</div>
+                          </div>       
+                      </div>
+                
+                      <div class="forecast">
+                        <div class="forecast__item">
+                          <div class="forecast__time">сейчас</div>
+                          <div class="forecast__temperature"> 18˚</div>
+                        </div>
+                
+                        <div class="forecast__item">
+                          <div class="forecast__time"> 21 </div>
+                          <div class="forecast__temperature"> 15˚</div>
+                        </div>
+                
+                        <div class="forecast__item">
+                          <div class="forecast__time"> -- </div>
+                          <div class="forecast__temperature"> --˚</div>
+                        </div>
+                
+                        <div class="forecast__item">
+                          <div class="forecast__time"> -- </div>
+                          <div class="forecast__temperature"> --˚</div>
+                        </div>
+                
+                        <div class="forecast__item">
+                          <div class="forecast__time"> -- </div>
+                          <div class="forecast__temperature"> --˚</div>
+                        </div>
+                
+                        <div class="forecast__item">
+                          <div class="forecast__time"> -- </div>
+                          <div class="forecast__temperature"> --˚</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+
+    <footer>
+        <div class="footer__container grid">
+            <div class="footer__text">Если у вас возникло желание связаться со мной (по хорошему поводу), вы можете мне позвонить или написать, используя следующие контакты:</div>
+            <div class="footer__contacts">
+                <div class="contact1">
+                    <div class="contact__name">Звонки/Telegram</div>
+                    <div class="contact__value">+7 904 428 69 22</div>
+                </div>
+                <div class="contact2">
+                    <div class="contact__name">Почта:</div>
+                    <div class="contact__value">alekseev.roman.1992@mail.ru</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="assets/js/clock.js"></script>
+<script src="assets/js/tictactoe.js"></script>
+<script src="assets/js/form.js"></script>
+<script src="assets/js/calculator.js"></script>
+<script src="assets/js/weather.js"></script>
+</body>
+</html>

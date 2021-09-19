@@ -1,0 +1,147 @@
+.tictactoe__container {
+    height: 650px;
+    position: relative;
+}
+
+.board {
+    justify-self: center;
+    align-self: center;
+    width: 310px;
+	height: 310px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    cursor: pointer;
+}
+
+#cell0 {
+    border-right: 3px solid #333;
+    border-bottom: 3px solid #333;
+}
+
+#cell1 {
+    border-bottom: 3px solid #333;
+}
+
+#cell2 {
+    border-left: 3px solid #333;
+    border-bottom: 3px solid #333;
+}
+
+#cell3 {
+    border-right: 3px solid #333;
+}
+
+#cell5 {
+    border-left: 3px solid #333;
+}
+
+#cell6 {
+    border-right: 3px solid #333;
+    border-top: 3px solid #333;
+}
+
+#cell7 {
+    border-top: 3px solid #333;
+}
+
+#cell8 {
+    border-left: 3px solid #333;
+    border-top: 3px solid #333;
+}
+
+.x-object {
+    position: relative;
+}
+
+.x-object::before {
+    position: absolute;
+    content: '';
+    width: 75px;
+    height: 23px;
+    background-color: var(--first-color);
+    transform: rotate(45deg);
+    top: 2.4rem;
+    left: 15%;
+}
+
+.x-object::after {
+    position: absolute;
+    content: '';
+    width: 75px;
+    height: 23px;
+    background-color: var(--first-color);
+    transform: rotate(315deg);
+    top: 2.4rem;
+    left: 15%;
+}
+
+.o-object {
+    position: relative;
+}
+
+.o-object::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 20px solid var(--first-color);
+    border-radius: 50%;
+    top: 1rem;
+    left: 1rem;
+}
+
+.resultbox {
+    width: 200px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: hsla(var(--hue-color), 8%, 5%, 0.6);
+    backdrop-filter: blur(.5em);
+    box-shadow: 0px 3px 16px hsla(var(--hue-color), 8%, 5%, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    transition: opacity, top 0.5s ease-in-out;
+}
+
+#win-message {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: max-content;
+}
+
+#restart-button {
+    position: relative;
+    top: 5.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--first-color);
+    width: 50%;
+    height: 20%;
+    color: white;
+    font-family: inherit;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #8282FA;
+}
+
+.resultbox.hide {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+}

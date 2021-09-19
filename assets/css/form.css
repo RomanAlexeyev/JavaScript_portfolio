@@ -1,0 +1,126 @@
+.form__container {
+    height: 650px;
+    position: relative;
+}
+
+.form {
+    padding: 2rem;
+    background-color: var(--body-color);
+    width: 20rem;
+    height: 31rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px hsla(var(--hue-color), 8%, 12%, 1);
+}
+
+.form__header {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: var(--sub-font-size);
+    font-weight: var(--font-bold);
+    color: var(--first-color);
+}
+
+.form__control {
+    margin-bottom: 3px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.form__control label {
+    margin-left: 2px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+.form__control input {
+    background-color: var(--dark-color);
+    color: white;
+    border: 1px solid var(--body-color);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: .9rem;
+    font-family: inherit;
+}
+
+.form__control.success input {
+    border-color: #6AC040;
+}
+
+.form__control.success > span.check {
+    visibility: visible;
+}
+
+.form__control.error input {
+    border-color: #F04042;
+}
+
+.form__control.error > span.problem {
+    visibility: visible;
+}
+
+.form__control input::placeholder {
+    color: #404044;
+}
+
+.form__control span {
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 31px;
+    right: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    visibility: hidden;
+}
+
+.form__control .check {
+    text-align: center;
+    background-color: #6AC040;
+}
+
+.form__control .problem {
+    text-align: center;
+    background-color: #F04042;
+}
+
+.form__control small {
+    visibility: hidden;
+    font-size: var(--tiny-font-size);
+    font-weight: 100;
+    line-height: 0.5rem;
+    margin-left: 2px;
+    color: #F04042;
+}
+
+.form__control.error small {
+    visibility: visible;
+}
+
+.form button {
+    display: block;
+    margin-top: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #8282FA;
+}
