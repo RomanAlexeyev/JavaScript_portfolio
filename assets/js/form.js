@@ -34,7 +34,7 @@ function checkInputs () {
     if (passVal == '') {
         setErrorFor(password, 'Вы не указали пароль');
     } else if (!isPassword(passVal)) {
-        setErrorFor(password, 'Минимум 7 знаков, 1 цифра и 1 строчная буква');
+        setErrorFor(password, 'Минимум 7 знаков, 1 цифра и 1 заглавная буква');
     } else {
         setSuccessFor(password);
     }
