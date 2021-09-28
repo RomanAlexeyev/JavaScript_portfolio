@@ -137,14 +137,10 @@
     background-image: url('../images/03n.png');
 }
 
-.icon__04d {
-    background-size: 100%;
-    background-image: url('../images/04d.png');
-}
-
+.icon__04d,
 .icon__04n {
     background-size: 100%;
-    background-image: url('../images/04n.png');
+    background-image: url('../images/04d.png');
 }
 
 .icon__09d,
