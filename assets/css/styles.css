@@ -55,6 +55,13 @@ body {
     display: grid;
 }
 
+section#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #bg-text {
     position: absolute;
     top: 60%;
@@ -82,10 +89,8 @@ body {
 }
 
 .hero__container {
-    margin: 5rem auto;
-    max-width: 1120px;
-    padding: 0 60px;
-    grid-template-columns: 3fr 2fr;
+    margin: 0 10%;
+    grid-template-columns: 4fr 2fr;
     grid-gap: 10%;
     z-index: 10;
 }
@@ -147,16 +152,14 @@ img {
 
 .footer__container {
     background-color: var(--first-color);
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5rem;
-    padding: 2rem 4rem;
+    padding: 2% 10%;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 10%;
     font-weight: var(--font-light);
     font-size: var(--sub-font-size);
 }
 
 .footer__text {
-    margin-left: 4rem;
-    margin-top: .5rem;
     line-height: 1.8rem;
 }
 
